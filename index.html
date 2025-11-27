@@ -50,7 +50,7 @@
         </div>
     </section>
 
-    <!-- 2. Feature Release Notes (OUR DESIGNS) -->
+    <!-- 2. OUR DESIGNS (Product Grid) -->
     <section id="designs" class="py-20 md:py-32 p-4 md:p-8 bg-gray-900">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-white">
@@ -59,29 +59,51 @@
 
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Project 1: THE SCRAPBOOK -->
-                <div class="p-6 md:p-8 bg-slate-800 rounded-xl transition duration-300 hover:bg-slate-700 card-glow">
-                    <span class="text-4xl accent-color">📔</span>
-                    <h3 class="text-2xl font-semibold mt-4 mb-2 text-white">THE SCRAPBOOK</h3>
+                <!-- The entire card is now clickable to open the modal -->
+                <div onclick="openProductModal('scrapbook')" class="cursor-pointer p-6 md:p-8 bg-slate-800 rounded-xl transition duration-300 hover:bg-slate-700 card-glow group">
+                    <!-- Placeholder Image (Replace the src with your high-res image URL) -->
+                    <img src="https://placehold.co/400x300/38bdf8/ffffff?text=The+Scrapbook" 
+                         alt="The Scrapbook Product Mockup" 
+                         class="w-full h-auto rounded-lg mb-4 shadow-md group-hover:scale-[1.01] transition duration-300"
+                         onerror="this.onerror=null; this.src='https://placehold.co/400x300/38bdf8/ffffff?text=Image+Unavailable';"
+                    >
+                    
+                    <h3 class="text-2xl font-semibold mt-4 mb-1 text-white">THE SCRAPBOOK</h3>
+                    <p class="text-xl font-bold accent-color mb-3">2000 PKR</p>
                     <p class="mt-3 text-gray-300">
-                        This brings memories to life through a beautifully designed homepage and curated sections like “The Song That Reminds Me of You,” heartfelt letters, comforting messages for tired days, a custom illustrated picture of the two of you, and a shared timeline of your story.
+                        This brings memories... <span class="text-sky-400 font-medium cursor-pointer">(View Details)</span>
                     </p>
                 </div>
 
                 <!-- Project 2: THE APOLOGY -->
-                <div class="p-6 md:p-8 bg-slate-800 rounded-xl transition duration-300 hover:bg-slate-700 card-glow">
-                    <span class="text-4xl accent-color">🕊️</span>
-                    <h3 class="text-2xl font-semibold mt-4 mb-2 text-white">THE APOLOGY</h3>
+                <div onclick="openProductModal('apology')" class="cursor-pointer p-6 md:p-8 bg-slate-800 rounded-xl transition duration-300 hover:bg-slate-700 card-glow group">
+                    <!-- Placeholder Image (Replace the src with your high-res image URL) -->
+                    <img src="https://ibb.co/Z16Xvd4R" 
+                         alt="The Apology Product Mockup" 
+                         class="w-full h-auto rounded-lg mb-4 shadow-md group-hover:scale-[1.01] transition duration-300"
+                         onerror="this.onerror=null; this.src='https://placehold.co/400x300/38bdf8/ffffff?text=Image+Unavailable';"
+                    >
+                    
+                    <h3 class="text-2xl font-semibold mt-4 mb-1 text-white">THE APOLOGY</h3>
+                    <p class="text-xl font-bold accent-color mb-3">1000 PKR</p>
                     <p class="mt-3 text-gray-300">
-                        A beautifully designed apology webpage expressing love, regret, and devotion. Perfect for saying ‘I’m sorry’ in the sweetest way possible.
+                        A beautifully designed... <span class="text-sky-400 font-medium cursor-pointer">(View Details)</span>
                     </p>
                 </div>
 
                 <!-- Project 3: THE HEARTMAIL -->
-                <div class="p-6 md:p-8 bg-slate-800 rounded-xl transition duration-300 hover:bg-slate-700 card-glow">
-                    <span class="text-4xl accent-color">✉️</span>
-                    <h3 class="text-2xl font-semibold mt-4 mb-2 text-white">THE HEARTMAIL</h3>
+                <div onclick="openProductModal('heartmail')" class="cursor-pointer p-6 md:p-8 bg-slate-800 rounded-xl transition duration-300 hover:bg-slate-700 card-glow group">
+                    <!-- Placeholder Image (Replace the src with your high-res image URL) -->
+                    <img src="https://ibb.co/jvVGS2bL" 
+                         alt="The Heartmail Product Mockup" 
+                         class="w-full h-auto rounded-lg mb-4 shadow-md group-hover:scale-[1.01] transition duration-300"
+                         onerror="this.onerror=null; this.src='https://placehold.co/400x300/38bdf8/ffffff?text=Image+Unavailable';"
+                    >
+                    
+                    <h3 class="text-2xl font-semibold mt-4 mb-1 text-white">THE HEARTMAIL</h3>
+                    <p class="text-xl font-bold accent-color mb-3">1000 PKR</p>
                     <p class="mt-3 text-gray-300">
-                        Inside this envelope is a piece of your heart, wrapped softly in words you could never say out loud.
+                        Inside this envelope... <span class="text-sky-400 font-medium cursor-pointer">(View Details)</span>
                     </p>
                 </div>
             </div>
@@ -96,9 +118,12 @@
             </h2>
 
             <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-                Scrapbookify is a little passion project by two cousins who love turning emotions into cute digital experiences.
-                We create personalized, interactive webpages that help people express love, apologies, surprises, and special moments in a unique and heartfelt way.
-                Every page we design is made with softness, creativity, and the goal of making someone feel truly special.
+               At Scrapbookify, we turn emotions into experiences.
+               We create personalized, interactive, and heartfelt webpages that help people express love, apologies, confessions, surprises, and all the feelings they struggle to put into words.
+               What started as a small idea between two cousins who loved creativity, design, and storytelling has now become a space where anyone can make their loved ones feel truly special.
+               Whether it’s a cute love envelope animation, a heartfelt apology page, a birthday surprise, or a romantic digital scrapbook — we design it with love, softness, and attention to detail.
+               For us, every webpage is more than just a design.
+               It’s a memory, a moment, a feeling — captured forever.
             </p>
 
             <div class="pt-8">
@@ -131,8 +156,173 @@
         </div>
     </footer>
 
+    <!-- PRODUCT DETAIL MODAL (Lightbox) -->
+    <div id="productModal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center p-4" aria-modal="true" role="dialog">
+        <div class="bg-slate-800 rounded-xl max-w-6xl w-full h-full md:h-auto overflow-y-auto shadow-2xl card-glow transform transition-all duration-300 scale-95 md:scale-100">
+            
+            <!-- Close Button -->
+            <button onclick="closeProductModal()" class="absolute top-4 right-4 text-3xl text-gray-400 hover:text-white transition z-10 p-2">
+                &times;
+            </button>
+
+            <div class="flex flex-col md:flex-row p-6 md:p-10">
+                
+                <!-- Product Image Carousel Area (Left/Top) -->
+                <div class="md:w-3/5 relative mb-6 md:mb-0 md:pr-10">
+                    <div id="carouselContainer" class="relative overflow-hidden rounded-lg">
+                        <!-- Image will be injected here -->
+                        <img id="modalImage" src="" alt="Product Showcase" class="w-full rounded-lg shadow-xl aspect-video object-cover">
+                        
+                        <!-- Carousel Controls -->
+                        <button onclick="changeImage(-1)" class="absolute left-0 top-1/2 -translate-y-1/2 p-3 text-white bg-black bg-opacity-50 hover:bg-opacity-75 rounded-r-lg transition">
+                            &#10094;
+                        </button>
+                        <button onclick="changeImage(1)" class="absolute right-0 top-1/2 -translate-y-1/2 p-3 text-white bg-black bg-opacity-50 hover:bg-opacity-75 rounded-l-lg transition">
+                            &#10095;
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Details Area (Right/Bottom) -->
+                <div class="md:w-2/5 md:pl-4 space-y-6">
+                    <h3 id="modalTitle" class="text-4xl font-extrabold accent-color"></h3>
+                    <p id="modalPrice" class="text-3xl font-bold text-white border-b border-slate-700 pb-2"></p>
+                    
+                    <div class="space-y-3">
+                        <p id="modalFullDescription" class="text-lg text-gray-300"></p>
+                    </div>
+
+                    <!-- Features List -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-200 mb-2">Key Features:</h4>
+                        <ul id="modalFeatures" class="list-none space-y-1 text-gray-400 pl-0">
+                            <!-- Features will be injected here -->
+                        </ul>
+                    </div>
+
+                    <!-- CTA Button inside Modal - Updated to PLACE YOUR ORDER -->
+                    <!-- This button uses the Instagram handle to create the direct link -->
+                    <a id="modalCtaLink" href="https://www.instagram.com/scrap.bookify?igsh=NWZnYWs1dG5hdmNo" target="_blank" class="block w-full text-center py-3 px-6 text-lg font-extrabold text-gray-900 accent-bg rounded-full shadow-lg hover:bg-sky-400 transition duration-300 mt-6">
+                        PLACE YOUR ORDER
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <script>
-        // JavaScript for smooth scrolling
+        // --- Product Data Structure (Updated Prices) ---
+        // NOTE: The Instagram handle is set directly in the CTA link below and in the footer.
+        const products = [
+            {
+                id: 'scrapbook',
+                title: 'THE SCRAPBOOK',
+                price: '2000 PKR', // Updated to PKR
+                fullDesc: 'This brings memories to life through a beautifully designed homepage and curated sections like “The Song That Reminds Me of You,” heartfelt letters, comforting messages for tired days, a custom illustrated picture of the two of you, and a shared timeline of your story.',
+                features: ['Custom Illustrated Picture', 'Heartfelt Letter Sections', 'Shared Relationship Timeline', 'Music/Song Integration', 'Designed with Softness'],
+                // *** IMPORTANT: Replace these placeholder URLs with your actual product mockups ***
+                images: [
+                    'https://placehold.co/600x450/38bdf8/ffffff?text=SCRAPBOOK+MOCKUP+1',
+                    'https://placehold.co/600x450/1e293b/ffffff?text=SCRAPBOOK+MOCKUP+2',
+                    'https://placehold.co/600x450/475569/ffffff?text=SCRAPBOOK+MOCKUP+3'
+                ]
+            },
+            {
+                id: 'apology',
+                title: 'THE APOLOGY',
+                price: '1000 PKR', // Updated to PKR
+                fullDesc: 'A beautifully designed apology webpage expressing love, regret, and devotion. Perfect for saying ‘I’m sorry’ in the sweetest way possible. This template is designed to feel sincere and visually comforting.',
+                features: ['Sincere & Visually Comforting Design', 'Private Message Integration', 'Customizable Regret Message', 'Immediate Digital Delivery', 'Unique Apology Concept'],
+                // *** IMPORTANT: Replace these placeholder URLs with your actual product mockups ***
+                images: [
+                    'https://ibb.co/Z16Xvd4R',
+                    'https://ibb.co/rJSd8LG'
+                ]
+            },
+            {
+                id: 'heartmail',
+                title: 'THE HEARTMAIL',
+                price: '1000 PKR', // Updated to PKR
+                fullDesc: 'Inside this envelope is a piece of your heart, wrapped softly in words you could never say out loud. A simple, elegant landing page focusing purely on a single, powerful message or letter.',
+                features: ['Single-Page Elegant Design', 'Focus on High-Impact Message', 'Minimalist Aesthetic', 'Perfect for Quick, Deep Messages', 'High Contrast Text'],
+                // *** IMPORTANT: Replace these placeholder URLs with your actual product mockups ***
+                images: [
+                    'https://ibb.co/jvVGS2bL',
+                    'https://ibb.co/2Yc3qSBs'
+                ]
+            }
+        ];
+
+        let currentProduct = null;
+        let currentImageIndex = 0;
+        const modal = document.getElementById('productModal');
+        const modalImage = document.getElementById('modalImage');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalPrice = document.getElementById('modalPrice');
+        const modalFullDescription = document.getElementById('modalFullDescription');
+        const modalFeatures = document.getElementById('modalFeatures');
+        const modalCtaLink = document.getElementById('modalCtaLink');
+
+        // --- Carousel Functions ---
+
+        function updateImage() {
+            if (currentProduct && currentProduct.images.length > 0) {
+                // Ensure index is within bounds
+                if (currentImageIndex < 0) {
+                    currentImageIndex = currentProduct.images.length - 1;
+                } else if (currentImageIndex >= currentProduct.images.length) {
+                    currentImageIndex = 0;
+                }
+                modalImage.src = currentProduct.images[currentImageIndex];
+            }
+        }
+
+        function changeImage(direction) {
+            currentImageIndex += direction;
+            updateImage();
+        }
+
+        // --- Modal Control Functions ---
+
+        function openProductModal(productId) {
+            currentProduct = products.find(p => p.id === productId);
+
+            if (!currentProduct) {
+                console.error("Product not found:", productId);
+                return;
+            }
+
+            // 1. Populate Text Content
+            modalTitle.textContent = currentProduct.title;
+            modalPrice.textContent = currentProduct.price;
+            modalFullDescription.textContent = currentProduct.fullDesc;
+
+            // 2. Populate Features
+            modalFeatures.innerHTML = ''; // Clear existing features
+            currentProduct.features.forEach(feature => {
+                const li = document.createElement('li');
+                li.className = 'flex items-start';
+                li.innerHTML = `<span class="accent-color text-xl mr-2 mt-[-3px]">&#10003;</span> ${feature}`; // Checkmark icon
+                modalFeatures.appendChild(li);
+            });
+            
+            // 3. Initialize Image Carousel
+            currentImageIndex = 0;
+            updateImage();
+
+            // 4. Show Modal
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeProductModal() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            currentProduct = null;
+            currentImageIndex = 0;
+        }
+
+        // --- General Functions ---
 
         // Function to handle smooth scrolling for all anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
